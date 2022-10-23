@@ -1,0 +1,215 @@
+[{
+  "_id": {
+    "$oid": "6353e24a7ace0a0640fe3464"
+  },
+  "customername": "Deshraj",
+  "phoneNumber": {
+    "$numberLong": "8155843561"
+  },
+  "address": "Arizona",
+  "loanAmount": 2021,
+  "intrest": 3,
+  "loanTermYears": 7,
+  "loanType": "Eduction Loan",
+  "description": "to Study at ASU",
+  "date": {
+    "$date": {
+      "$numberLong": "1393660800000"
+    }
+  },
+  "insertedDate": {
+    "$date": {
+      "$numberLong": "1660114800000"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "6353e24a7ace0a0640fe3465"
+  },
+  "customername": "Ishan",
+  "phoneNumber": {
+    "$numberLong": "6822144712"
+  },
+  "address": "Dubai",
+  "loanAmount": 200,
+  "intrest": 7,
+  "loanTermYears": 10,
+  "loanType": "Buisness Loan",
+  "description": "to expand bakery store",
+  "date": {
+    "$date": {
+      "$numberLong": "1393660800000"
+    }
+  },
+  "insertedDate": {
+    "$date": {
+      "$numberLong": "1660114800000"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "6353e24a7ace0a0640fe3466"
+  },
+  "customername": "Surya",
+  "phoneNumber": {
+    "$numberLong": "7854789631"
+  },
+  "address": "UK",
+  "loanAmount": 170,
+  "intrest": 6,
+  "loanTermYears": 4,
+  "loanType": "Car Loan",
+  "description": "to buy bugati car",
+  "date": {
+    "$date": {
+      "$numberLong": "1393660800000"
+    }
+  },
+  "insertedDate": {
+    "$date": {
+      "$numberLong": "1660114800000"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "6353e24a7ace0a0640fe3467"
+  },
+  "customername": "Sohaib",
+  "phoneNumber": 1254789635,
+  "address": "Iran",
+  "loanAmount": 300,
+  "intrest": 2,
+  "loanTermYears": 3,
+  "loanType": "Home Loan",
+  "description": "to buy new home",
+  "date": {
+    "$date": {
+      "$numberLong": "1393660800000"
+    }
+  },
+  "insertedDate": {
+    "$date": {
+      "$numberLong": "1660114800000"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "6353e24a7ace0a0640fe3468"
+  },
+  "customername": "Rutvik",
+  "phoneNumber": {
+    "$numberLong": "8745963125"
+  },
+  "address": "Rajkot",
+  "loanAmount": 785,
+  "intrest": 6,
+  "loanTermYears": 8,
+  "loanType": "Industry Loan",
+  "description": "to buy ne equipments for factory",
+  "date": {
+    "$date": {
+      "$numberLong": "1393660800000"
+    }
+  },
+  "insertedDate": {
+    "$date": {
+      "$numberLong": "1660114800000"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "6353e24a7ace0a0640fe3469"
+  },
+  "customername": "Abhi",
+  "phoneNumber": {
+    "$numberLong": "7854123694"
+  },
+  "address": "Surendranagar",
+  "loanAmount": 500,
+  "intrest": 9,
+  "loanTermYears": 9,
+  "loanType": "Bike Loan",
+  "description": "to buy new racing bike",
+  "date": {
+    "$date": {
+      "$numberLong": "1393660800000"
+    }
+  },
+  "insertedDate": {
+    "$date": {
+      "$numberLong": "1660114800000"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "6353e24a7ace0a0640fe346a"
+  },
+  "customername": "Umang",
+  "phoneNumber": 1236752014,
+  "address": "Texas",
+  "loanAmount": 910,
+  "intrest": 8,
+  "loanTermYears": 2,
+  "loanType": "Startup Loan",
+  "description": "to boost startup",
+  "date": {
+    "$date": {
+      "$numberLong": "1393660800000"
+    }
+  },
+  "insertedDate": {
+    "$date": {
+      "$numberLong": "1660114800000"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "635444e92c443639ce5f9326"
+  },
+  "customername": "Punit",
+  "phoneNumber": {
+    "$numberLong": "5225556655"
+  },
+  "address": "Ny",
+  "loanAmount": 2022,
+  "intrest": 3,
+  "loanTermYears": 7,
+  "loanType": "Eduction Loan",
+  "description": "to Study at NYU"
+},{
+  "_id": {
+    "$oid": "63544d03a6a36d59f732f830"
+  },
+  "customername": "Vishvaraj",
+  "phoneNumber": 533325145,
+  "address": "DC",
+  "loanAmount": 5000,
+  "intrest": 12,
+  "loanTermYears": 17,
+  "loanType": "Eduction Loan",
+  "description": "to Study at DCU"
+},{
+  "_id": {
+    "$oid": "63544d8239ea2b31c2ff62f9"
+  },
+  "customername": "Kanan",
+  "phoneNumber": 533155848,
+  "address": "Jersey",
+  "loanAmount": 1000,
+  "intrest": 5,
+  "loanTermYears": 3,
+  "loanType": "Eduction Loan",
+  "description": "to Study at JU"
+},{
+  "_id": {
+    "$oid": "63544de4788aae371b572041"
+  },
+  "customername": "Kavan",
+  "phoneNumber": 15484518,
+  "address": "florida",
+  "loanAmount": 800,
+  "intrest": 6,
+  "loanTermYears": 8,
+  "loanType": "Eduction Loan",
+  "description": "to Study at FU"
+}]

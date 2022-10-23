@@ -1,0 +1,36 @@
+// MongoDB Playground
+// To disable this template go to Settings | MongoDB | Use Default Template For Playground.
+// Make sure you are connected to enable completions and to be able to run a playground.
+// Use Ctrl+Space inside a snippet or a string literal to trigger completions.
+
+// Select the database to use.
+use("mongodbVSCodePlaygroundDB");
+
+// The drop() command destroys all data from a collection.
+// Make sure you run it against the correct database and collection.
+db.loans.drop();
+
+// Insert a few documents into the loans collection.
+db.loans.insertMany([
+  {  "customername": "Deshraj", "phoneNumber": 8155843561, "address": "Arizona", "loanAmount":2021, "intrest":3, "loanTermYears": 7, "loanType": "Eduction Loan", "description": "to Study at ASU", "date": new Date("2014-03-01T08:00:00Z"), "insertedDate": new Date("2022-08-10T07:00:00.000+00:00") },
+  {  "customername": "Ishan", "phoneNumber": 6822144712, "address": "Dubai", "loanAmount":200, "intrest":7, "loanTermYears": 10, "loanType": "Buisness Loan", "description": "to expand bakery store", "date": new Date("2014-03-01T08:00:00Z"), "insertedDate": new Date("2022-08-10T07:00:00.000+00:00") },
+  {  "customername": "Surya", "phoneNumber": 7854789631, "address": "UK", "loanAmount":170, "intrest":6, "loanTermYears": 4, "loanType": "Car Loan", "description": "to buy bugati car", "date": new Date("2014-03-01T08:00:00Z"), "insertedDate": new Date("2022-08-10T07:00:00.000+00:00") },
+  { "customername": "Sohaib", "phoneNumber": 1254789635, "address": "Iran", "loanAmount":300, "intrest":2, "loanTermYears": 3, "loanType": "Home Loan", "description": "to buy new home", "date": new Date("2014-03-01T08:00:00Z"), "insertedDate": new Date("2022-08-10T07:00:00.000+00:00") },
+  { "customername": "Rutvik", "phoneNumber": 8745963125, "address": "Rajkot", "loanAmount":785, "intrest":6, "loanTermYears": 8, "loanType": "Industry Loan", "description": "to buy ne equipments for factory", "date": new Date("2014-03-01T08:00:00Z"), "insertedDate": new Date("2022-08-10T07:00:00.000+00:00") },
+  { "customername": "Abhi", "phoneNumber": 7854123694, "address": "Surendranagar", "loanAmount":500, "intrest":9, "loanTermYears": 9, "loanType": "Bike Loan", "description": "to buy new racing bike", "date": new Date("2014-03-01T08:00:00Z"), "insertedDate": new Date("2022-08-10T07:00:00.000+00:00") },
+  {  "customername": "Dripraj", "phoneNumber": 4587698580, "address": "Nepal", "loanAmount":870, "intrest":4, "loanTermYears": 6, "loanType": "House Loan", "description": "to renovate farm house", "date": new Date("2014-03-01T08:00:00Z"), "insertedDate": new Date("2022-08-10T07:00:00.000+00:00") },
+  {  "customername": "Umang", "phoneNumber": 1236752014, "address": "Texas", "loanAmount":910, "intrest":8, "loanTermYears": 2, "loanType": "Startup Loan", "description": "to boost startup", "date": new Date("2014-03-01T08:00:00Z"), "insertedDate": new Date("2022-08-10T07:00:00.000+00:00") },
+]);
+
+
+
+// Build an aggregation to view total loans for each customer in 2014.
+const aggregation = [
+  { $match: { date: { $gte: new Date("2014-01-01"), $lt: new Date("2015-01-01") } } },
+  { $group: { _id: "$customername", totalAmounttopay: { $sum: { $multiply: [ "$loanAmount", "$intrest" ] } } } }
+];
+
+// Run the aggregation and open a cursor to the results.
+// Use toArray() to exhaust the cursor to return the whole result set.
+// You can use hasNext()/next() to iterate through the cursor page by page.
+db.loans.aggregate(aggregation);
